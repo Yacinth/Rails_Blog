@@ -13,6 +13,7 @@ Article.destroy_all
 Category.destroy_all
 Comment.destroy_all
 Like.destroy_all
+p "delete from sqlite_sequence"
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'users'")
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'articles'")
 ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 'comments'")
