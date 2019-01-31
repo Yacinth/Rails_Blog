@@ -27,7 +27,7 @@ ActiveRecord::Base.connection.execute("DELETE from sqlite_sequence where name = 
 end
 
 5.times do
-  category = Category.create(name: Faker::Job.education_level)
+  category = Category.create!(name: Faker::Job.education_level)
   p "category #{category.name}"
 end
 
@@ -37,12 +37,12 @@ end
 end
 
 15.times do
-  comment = Comment.create(user_id: rand(1..10), article_id: rand(1..10), content: Faker::TvShows::Simpsons.quote)
+  comment = Comment.create!(user_id: rand(1..10), article_id: rand(1..10), content: Faker::TvShows::Simpsons.quote)
   p "comment #{comment.content}"
 end
 
 15.times do
-  like = Like.create(user_id: rand(1..10), article_id: rand(1..10))
+  like = Like.create!(user_id: rand(1..10), article_id: rand(1..10))
 end
 
 
