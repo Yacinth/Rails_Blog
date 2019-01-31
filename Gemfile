@@ -33,6 +33,13 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Use table_print to view beautiful table
+gem 'table_print'
+
+#Use Faker to create fake data
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

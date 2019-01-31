@@ -1,25 +1,29 @@
-# README
+![](https://media0.giphy.com/media/2zeji2UedvZzvIZ45N/giphy.gif?cid=3640f6095c4a8a4d6b6958366767066f)
 
-blog
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Le Blog des familles
 
-Things you may want to cover:
+~~ Cynthia @Yacinth
 
 - Ruby version
 
-- System dependencies
+```ruby
+ruby 2.5.1
+```
 
-- Configuration
+- Executer un bundle install pour pouvoir utiliser les gems du Gemfile
 
-- Database creation
+```ruby
+$ bundle install
+```
 
-- Database initialization
+- Pour lancer la console rails :
 
-- How to run the test suite
+```ruby
+$ rails console
+```
 
-- Services (job queues, cache servers, search engines, etc.)
+- SQLite3
 
-- Deployment instructions
-
-- ...
+```ruby
+$ sqlite3 db/development.sqlite3
+```
